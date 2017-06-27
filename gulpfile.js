@@ -91,6 +91,11 @@ gulp.task('build', ['clean'], function(){
 
 
 
+gulp.task('jshint', function(){
+  return gulp.src(['js/*.js'])
+    .pipe(jshint())
+    .pipe(jshint.reporter('default'));
+});
 
 
 gulp.task('jsBuild', ['jsBrowserify', 'jshint'], function(){
