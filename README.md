@@ -73,8 +73,16 @@ gulp.task('concatInterface', function() {
 If we maintain this naming convention as our project grows we won't need to modify our gulp concatenate/browserify tasks if we add new files - we just name them something ending in -interface.js if they are going to be used in the browser, and keep them in the js folder. Then they will automatically be included in build/js/app.js.
 
 
+# next, require uglify,
+* task minifyScripts
+* install gulp-uglify
 
+* run gulp minifyScripts
 
+# install build, and del
+npm install gulp-util --save-dev
+
+npm install del --save-dev
 
 
 
