@@ -36,14 +36,14 @@ gulp.task("minifyScripts", ["jsBrowserify"], function(){
 
 gulp.task('jsBrowserify', ['concatInterface'], function() {
   return browserify({ entries:
-  ['./js/weather-interface.js'] })
+  ['./tmp/allConcat.js'] })
     .bundle()
     .pipe(source('app.js'))
     .pipe(gulp.dest('./build/js'));
 });
 
 gulp.task('concatInterface', function() {
-  return gulp.src(['.js/*-interface.js'])
+  return gulp.src(['./js/*-interface.js'])
   .pipe(concat('allConcat.js'))
   .pipe(gulp.dest('./tmp'));
 });
