@@ -3,7 +3,7 @@
 ### From https://www.learnhowtoprogram.com/javascript/introduction-to-javascript/object-oriented-javascript-with-node-modules
 
 1. Create HTML file
-2. Create a single js file with back/front end
+2. Create a single js file with back &front end
 3. Divide js file into "x.js" backend and "x-interface.js" frontend.  Adjust script to find new js file.  Adjust HTML to create Calculator object
 4. exports.calculatorModule = Calculator at end of main js file.  
   Think of exports as a giant, global JavaScript object. We are creating a new property on it called calculatorModule, and we are setting this property equal to our Calculator constructor function.
